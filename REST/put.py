@@ -8,6 +8,7 @@ class PUT:
         file=open('C:/Users/Dusa/PycharmProjects/API/REST/read.json','r')
         read=file.read()
         self.load=json.loads(read)
+        print(self.load)
 
     def Put_Resource(self):
         result=requests.put(self.uri,self.load)

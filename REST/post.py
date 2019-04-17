@@ -14,7 +14,8 @@ class Post:
 
 
     def posting_json_into_api(self):
-        result=requests.post(self.uri,self.load)
+        jsonformat = {'first_name': 'b', 'middle_name': 'y', 'last_name': 'o', 'date_of_birth': '21'}
+        result=requests.post(self.uri,jsonformat)
         print(result.status_code)
         print(result.content)
         self.content=result.text

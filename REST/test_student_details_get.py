@@ -4,7 +4,7 @@ import jsonpath
 import requests
 
 def test_get_student_details():
-    uri='http://thetestingworldapi.com/api/studentsDetails/4258'
+    uri='http://thetestingworldapi.com/api/studentsDetails/4259'
     request=requests.get(uri)
     print('Reason is;',request.text)
     jsonres=json.loads(request.content)
